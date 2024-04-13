@@ -1,4 +1,7 @@
 {
+  "name": "srt2txt",
+  "version": "1.0.0",
+  "description": "Convert a .srt file to plain text",
   "type": "module",
   "bin": {
     "srt2txt": "./index.js"
