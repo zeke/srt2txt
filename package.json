@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "bin": {
+    "srt2txt": "./index.js"
+  }
+}

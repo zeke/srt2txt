@@ -1,0 +1,295 @@
+1
+00:00:01,230 --> 00:00:06,150
+Okay, hi, um as part of our sub 2
+
+2
+00:00:06,151 --> 00:00:10,730
+compliance audit we have to write a
+
+3
+00:00:10,731 --> 00:00:14,110
+software development like cycle document or an FDLC.
+
+4
+00:00:16,047 --> 00:00:18,791
+And this is my attempt at getting the ball rolling on that.
+
+5
+00:00:18,792 --> 00:00:23,737
+So I put it in this .github org here as a pull request.
+
+6
+00:00:23,738 --> 00:00:28,272
+.github is a convention used by GitHub where you
+
+7
+00:00:28,273 --> 00:00:32,047
+can store sort of org-wide configuration in there.
+
+8
+00:00:32,048 --> 00:00:35,842
+So I figured this might be a good place to keep some document about
+
+9
+00:00:35,843 --> 00:00:40,358
+how we use GitHub. Um so in this document I sort
+
+10
+00:00:40,359 --> 00:00:45,404
+of tried to straddle the line between writing a document that is catering
+
+11
+00:00:45,405 --> 00:00:50,077
+to the requirements and expectations of- the SOC 2
+
+12
+00:00:50,078 --> 00:00:55,157
+process, but also being a document that is hopefully actually
+
+13
+00:00:55,158 --> 00:01:00,517
+useful for new uh employees and contractors who are
+
+14
+00:01:00,518 --> 00:01:03,357
+joining the company and want to know how we do software development.
+
+15
+00:01:03,917 --> 00:01:06,671
+So it covers a lot, covers how we use GitHub,
+
+16
+00:01:06,672 --> 00:01:11,396
+covers our branching methodology,
+
+17
+00:01:11,397 --> 00:01:13,870
+how we should structure projects,
+
+18
+00:01:13,871 --> 00:01:16,033
+how to do documentation,
+
+19
+00:01:16,034 --> 00:01:20,017
+how to standardize on a sort of,
+
+20
+00:01:20,018 --> 00:01:24,523
+scripts for making projects approachable for new developers,
+
+21
+00:01:26,966 --> 00:01:30,160
+how to do PRs, how to do code review,
+
+22
+00:01:30,161 --> 00:01:34,746
+and basically the whole life cycle,
+
+23
+00:01:34,747 --> 00:01:37,189
+how we do releases, how we do deployment,
+
+24
+00:01:37,190 --> 00:01:39,191
+feature flags, etcetera.
+
+25
+00:01:39,192 --> 00:01:42,405
+And so a lot of it is GitHub specific, but there's also some content
+
+26
+00:01:42,406 --> 00:01:46,110
+in here about the various kind of external services that we use.
+
+27
+00:01:46,111 --> 00:01:50,476
+Um, there's a section in here about a depend about and how we use
+
+28
+00:01:50,477 --> 00:01:52,518
+that, which is Thank you. Uh,
+
+29
+00:01:52,519 --> 00:01:56,022
+one of the necessary parts of the stock two requirements.
+
+30
+00:01:56,023 --> 00:01:59,677
+Um, so this is ready for a look.
+
+31
+00:01:59,678 --> 00:02:03,191
+There are a few outstanding issues though and I'm not quite sure how to
+
+32
+00:02:03,192 --> 00:02:07,957
+proceed on them. So I took the contents of this current draft and
+
+33
+00:02:07,958 --> 00:02:11,541
+I'm paste it into Quad and ask if it's looking good enough.
+
+34
+00:02:11,542 --> 00:02:14,645
+Um, and it has some interesting feedback.
+
+35
+00:02:14,646 --> 00:02:16,928
+So uh,
+
+36
+00:02:16,929 --> 00:02:20,773
+the first one about access control, it says umm,
+
+37
+00:02:20,774 --> 00:02:24,578
+you need to describe how you regularly review and update access permissions.
+
+38
+00:02:24,579 --> 00:02:29,043
+So there's a section in the document I have here about our onboarding and
+
+39
+00:02:29,044 --> 00:02:32,267
+offboarding checklist. Um,
+
+40
+00:02:32,268 --> 00:02:37,124
+but one issue is that we have historically been very generous with permissions
+
+41
+00:02:37,125 --> 00:02:40,578
+when somebody joins the team even has a contractor.
+
+42
+00:02:40,579 --> 00:02:44,563
+We of just give them access to the entire organization.
+
+43
+00:02:44,564 --> 00:02:49,429
+Um, so something we might want to consider
+
+44
+00:02:49,430 --> 00:02:55,036
+here is do we need to implement a process for determining
+
+45
+00:02:55,037 --> 00:02:58,420
+who needs access to what and being more strict about it.
+
+46
+00:02:58,421 --> 00:03:00,583
+Um,
+
+47
+00:03:00,584 --> 00:03:05,159
+another thing is change management seems to be a very big
+
+48
+00:03:05,160 --> 00:03:07,872
+topic for this. Um,
+
+49
+00:03:07,873 --> 00:03:13,506
+SDLC thing. I haven't really broached the topic of,
+
+50
+00:03:13,507 --> 00:03:18,074
+How we plan and propose and approve the work
+
+51
+00:03:18,075 --> 00:03:23,332
+that we're going. Of course that's you know actively being
+
+52
+00:03:23,333 --> 00:03:28,007
+sort of refined or revised.
+
+53
+00:03:28,008 --> 00:03:30,761
+By our team, but I don't know how much I want to get into
+
+54
+00:03:30,762 --> 00:03:33,044
+that in this document. Um.
+
+55
+00:03:33,045 --> 00:03:37,971
+I know we're sort of using a combination of linear and GitHub
+
+56
+00:03:37,972 --> 00:03:42,567
+and notion and varying degrees and it's kind of up in the air.
+
+57
+00:03:42,568 --> 00:03:46,821
+So, um, I would love feedback on how to address that bit there.
+
+58
+00:03:46,822 --> 00:03:50,465
+Um.
+
+59
+00:03:50,466 --> 00:03:53,429
+Full durability management. I feel like this is actually pretty well covered.
+
+60
+00:03:53,430 --> 00:03:58,635
+I didn't cover back up in recovery because I don't actually really know much
+
+61
+00:03:58,636 --> 00:04:02,340
+about this. Um.
+
+62
+00:04:02,341 --> 00:04:05,923
+And then there's this section about vendor management and we could go into great
+
+63
+00:04:05,924 --> 00:04:09,959
+detail about all the the third party vendors we work with.
+
+64
+00:04:09,960 --> 00:04:14,896
+But I don't specifically know what our processes are for assessing
+
+65
+00:04:14,897 --> 00:04:19,742
+them. Whether they're making sure they're up to snap monitoring their
+
+66
+00:04:19,743 --> 00:04:22,365
+compliance etc.
+
+67
+00:04:22,366 --> 00:04:24,428
+So those are the outstanding things.
+
+68
+00:04:24,429 --> 00:04:27,211
+Umm.
+
+69
+00:04:27,212 --> 00:04:31,066
+Also happy to move this doc somewhere else if it makes more sense.
+
+70
+00:04:31,067 --> 00:04:33,699
+Might just make. A sense to put it in motion.
+
+71
+00:04:33,700 --> 00:04:36,413
+Umm. But since it is good.
+
+72
+00:04:36,414 --> 00:04:40,499
+So get hub specific. I thought this might be a good place to start.
+
+73
+00:04:40,500 --> 00:04:45,496
+Anyway, uhh looking forward to feedback and I hope this is useful.
+
+74
+00:04:45,497 --> 00:04:46,601
+Thanks. Bye.
